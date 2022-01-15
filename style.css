@@ -91,9 +91,7 @@ p{
     font-weight: 600;
     margin-bottom: 50px;
 }
-.collection-img img{
 
-}
 .collection-name{
     font-weight: 500;
     font-size: 28px;
@@ -199,4 +197,91 @@ p{
     padding: 11px 6px 1px 7px;
     margin-right: 15px;
     font-size: 20px;
+}
+
+@media only screen and (max-width: 688px) {
+    .site-header{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .hero{
+        display: grid;
+    }
+    .hero-item:nth-of-type(2){
+        grid-row: 1;
+    }
+    .hero-text{
+        margin-top: 50px;
+    }
+    .hero-heading{
+        font-size: 33px;
+        line-height: 50px;
+        padding-bottom: 20px;
+    }
+    .hero-description{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        padding: 5px;
+        justify-self: left;
+        margin-bottom: 30px;
+    }
+
+    .collections, .influencers-media-main{
+        display: block;
+    }
+    .collection, .influencer{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    /* For portrait layouts only */
+    .site-header{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .hero{
+        display: grid;
+    }
+    .hero-item:nth-of-type(2){
+        grid-row: 1;
+    }
+    .hero-text{
+        margin-top: 50px;
+    }
+    .hero-heading{
+        font-size: 33px;
+        line-height: 50px;
+        padding-bottom: 20px;
+    }
+    .hero-description{
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 600;
+        padding: 5px;
+        justify-self: left;
+        margin-bottom: 30px;
+    }
+    .hero-img{
+        width: 60%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .collections, .influencers-media-main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .collection, .influencer{
+        margin-bottom: 30px;
+    }
+    .collection-more{
+        text-decoration: none;
+        grid-column-start: 2;
+        grid-row-start: 6;
+        justify-self: end;
+        color: #E44780;
+        font-weight: 700;
+        font-size: 16px;
+    }
 }
