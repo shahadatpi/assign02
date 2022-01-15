@@ -129,6 +129,44 @@ p{
     font-weight: 700;
     font-size: 16px;
 }
+
+.influencers-media-heading{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.influencers-media-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.influencer{
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s
+}
+
+.influencers-media-icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(238, 41, 15, 0.87)), to(#cb0e8f));
+    background-image: linear-gradient(to right, rgba(238, 41, 15, 0.87), #cb0e8f);
+    -webkit-background-clip: text;
+    color: transparent
+}
+
+.influencer:hover {
+    -webkit-transform: translateY(-1.5rem) scale(1.03);
+    transform: translateY(-1.5rem) scale(1.03)
+}
 .site-footer{
     text-align: center;
     background-color: #0A0826;
