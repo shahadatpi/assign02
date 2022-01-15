@@ -32,7 +32,9 @@ p{
         transform: rotate(360deg);
     }
 }
-
+/*--------------
+ Hero Section
+ --------------*/
 .hero{
     display: flex;
     justify-content: space-between;
@@ -74,6 +76,9 @@ p{
 .hero-img img:hover{
     animation: rotate 1.5s linear;
 }
+/*--------------
+ Collections
+ --------------*/
 .collections{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -128,6 +133,11 @@ p{
     font-size: 16px;
 }
 
+
+/*--------------
+ Influencers Media Section
+ --------------*/
+
 .influencers-media-heading{
     text-align: center;
     padding-bottom: 50px;
@@ -165,6 +175,10 @@ p{
     -webkit-transform: translateY(-1.5rem) scale(1.03);
     transform: translateY(-1.5rem) scale(1.03)
 }
+
+/*--------------
+ Footer
+ --------------*/
 .site-footer{
     text-align: center;
     background-color: #0A0826;
@@ -198,6 +212,10 @@ p{
     margin-right: 15px;
     font-size: 20px;
 }
+
+/*--------------
+ Media Queries
+ --------------*/
 
 @media only screen and (max-width: 688px) {
     .site-header{
